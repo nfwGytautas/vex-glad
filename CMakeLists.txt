@@ -8,3 +8,6 @@ include_directories(glad/include/)
 file(GLOB_RECURSE CPP_SOURCE_FILES ${CMAKE_CURRENT_SOURCE_DIR}/glad/src/*.c ${CMAKE_CURRENT_SOURCE_DIR}/glad/include/*.h)
 
 add_library(glad ${CPP_SOURCE_FILES})
+
+add_definitions(-fPIE)
+
