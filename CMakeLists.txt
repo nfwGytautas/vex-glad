@@ -9,5 +9,5 @@ file(GLOB_RECURSE CPP_SOURCE_FILES ${CMAKE_CURRENT_SOURCE_DIR}/glad/src/*.c ${CM
 
 add_library(glad ${CPP_SOURCE_FILES})
 
-add_definitions(-fPIE)
+add_definitions(-fPIC)
 
